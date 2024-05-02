@@ -12,19 +12,28 @@
     font-size: 18px;
     display: block;
     text-align: center;
-    padding: 12px 14px;
-    float: left;
+    padding: 40px 14px;
+    border-bottom: solid #ffffff;
 }
 /*style when hover over link*/
 .header a:hover {
     background-color:#ffffff;
-    color: rgb(3, 12, 59);
+    font-weight: bold;
+    color: #000000;
 }
 
 /*style of active link*/
 .header a.active {
     background-color: rgb(52, 88, 109);
     color: #ffffff;
+ }
+
+ img {
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
  }
 
  /*standard page body style*/
@@ -41,7 +50,7 @@ h1 {
 }
 
 .footer {
-    position: fixed;
+    
     left: 0;
     bottom: 0;
     background-color: #000000;
