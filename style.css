@@ -1,7 +1,6 @@
 /*Styling header ares*/
 .header {
     overflow: hidden;
-    padding: 20px 10px;
     background-color: #000000;
 }
 
@@ -33,7 +32,6 @@
     height: auto;
     margin: auto;
     display: block;
-    border-radius: 100px;
  }
 
  /*standard page body style*/
