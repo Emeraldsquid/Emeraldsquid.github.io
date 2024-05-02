@@ -2,12 +2,12 @@
 .header {
     overflow: hidden;
     padding: 20px 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 
 /*Styling header links*/
 .header a {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -17,14 +17,14 @@
 }
 /*style when hover over link*/
 .header a:hover {
-    background-color:white;
+    background-color:#ffffff;
     color: rgb(3, 12, 59);
 }
 
 /*style of active link*/
 .header a.active {
     background-color: rgb(52, 88, 109);
-    color: white;
+    color: #ffffff;
  }
 
  /*standard page body style*/
@@ -34,6 +34,26 @@ body {
     font-family: Times, "Times New Roman", Georgia, sans-serif;   
 }
 
-h1{
-    color: rgb(13, 78, 18);
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color:#000000;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.footer p{
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    padding: 6px 6px;
 }
