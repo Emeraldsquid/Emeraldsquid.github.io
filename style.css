@@ -2,12 +2,12 @@
 .header {
     overflow: hidden;
     padding: 20px 10px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 /*Styling header links*/
 .header a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -15,7 +15,25 @@
     padding: 12px 14px;
     float: left;
 }
+/*style when hover over link*/
+.header a:hover {
+    background-color:white;
+    color: rgb(3, 12, 59);
+}
 
-#h1{
-    color: pink;
+/*style of active link*/
+.header a.active {
+    background-color: rgb(52, 88, 109);
+    color: white;
+ }
+
+ /*standard page body style*/
+body {
+    font-size: 14px;
+    color: #000000;
+    font-family: Times, "Times New Roman", Georgia, sans-serif;   
+}
+
+h1{
+    color: rgb(13, 78, 18);
 }
