@@ -1,4 +1,4 @@
-#bg-black {
+body {
     
         width: 100%;
         height: 100%;
@@ -7,27 +7,38 @@
         background: linear-gradient(
           to right,
           #ffffff 0%,
-          #ffffff 25%,
-          #000000 25%,
-          #000000 50%,
-          #ffffff 50%,
-          #ffffff 75%,
-          #000000 75%,
-          #000000 100%
+          #ffffff 20%,
+          #000000 20%,
+          #000000 40%,
+          #ffffff 40%,
+          #ffffff 60%,
+          #000000 60%,
+          #000000 80%,
+          #ffffff 80%,
+          #ffffff 100%
 
         );
 }
-.body {
-    width: 75%;
-    height: 75%;
+#container {
+    width: 500px;
+    height: 250px;
     background-color: #ffffff;
-    background-position: center;
+    background-attachment: fixed;
+    margin-top: 500px;
+    margin: 20px;
+    
 }
 /*Styling header ares*/
 .header {
+    width: 100%;
     overflow: hidden;
-    float: left;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
 }
+
 
 /*Styling header links*/
 .header a {
@@ -35,12 +46,8 @@
     text-decoration: none;
     font-size: 18px;
     display: block;
-    text-align: center;
-    padding: 40px 14px;
+    padding: 40px 30px;
     background-color: #000000;
-    margin-left: 275px;
-    
-
 }
 /*style when hover over link*/
 .header a:hover {
@@ -59,8 +66,7 @@
     max-width: 100px;
     height: auto;
     margin: auto;
-    display: block;
-    float: left;
+    background-color: #000000;
  }
 
  /*standard page body style*/
