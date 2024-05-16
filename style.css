@@ -16,9 +16,9 @@ body {
 }
 #container {
     width: 100%;
-    height: 100%px;
+    height: 900px;
     border: solid 10px #000000;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 /*Styling header ares*/
 ul {
@@ -79,7 +79,7 @@ li a:hover, .dropdown:hover .dropbtn {
   display: block;
 }
 
-  img {
+  .logo {
   max-width: 100px;
   display: block;
   margin-left: auto;
@@ -95,12 +95,57 @@ li a:hover, .dropdown:hover .dropbtn {
       width: 100%;
       font-size: large;
     }
+
+    h2 {
+      float: right;
+      width: 75%;
+      font-size: small;
+      text-align: center;
+      align-self: center;
+    }
+
+    .welcome-img {
+      max-width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      padding: 2px;
+    }
  }
 
 h1 {
     font-weight: bold;
     text-align: center;
     color:#ffffff;
+}
+
+
+.welcome-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text-block {
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.244);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.welcome-img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    float: right;
+    width: 100%;
+    padding: 2px;
+    border-radius: 10%;
+    border: 5px dotted #ffffff;
 }
 
 .footer {
