@@ -3,6 +3,11 @@
     margin: 0;
     
 }
+
+.black {
+  background-color: #000000;
+}
+
 body {
 
         width: 100%;
@@ -95,13 +100,16 @@ li a:hover, .dropdown:hover .dropbtn {
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
 
 
   }
 
-  .enter{
+  .enter {
     color: #ffffff;
     background-color: #000000;
+    max-width: 30%;
     border: none;
     border-radius: 15%;
     padding: 10px;
@@ -110,7 +118,12 @@ li a:hover, .dropdown:hover .dropbtn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .enter:hover {
+    border-bottom: #ffffff;
   }
 
   @media screen and (max-width: 600px) {
@@ -127,6 +140,7 @@ h1 {
     text-align: center;
     color:#ffffff;
 }
+
 
 
 .welcome-container {
