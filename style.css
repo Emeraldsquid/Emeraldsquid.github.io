@@ -20,7 +20,7 @@ body {
   margin: 0px;
   background: #0c1c1e;
   font-size: 14px;
-  color: #ffffff;
+  color: #d1dbd6;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .navbar .active {
   font-size: xx-large;
-  background-color: #000000;
+  background-color: #000f0c;
 }
 
 .logo-large {
@@ -65,16 +65,12 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   display: block;
-  border: 2px solid #ffffff22;
-  border-radius: 50%;
 }
 
 .enter {
   color: #ffffff;
-  background-color: #000000;
-  max-width: 30%;
-  border: none;
-  border-radius: 15%;
+  max-width: 40%;
+  border: solid 1px #000000;
   padding: 10px;
   font-size: xx-large;
   float: none;
@@ -86,7 +82,8 @@ body {
 }
 
   .enter:hover {
-    color: #ffffff22;
+    background-color: #000000;
+    font-weight: bold;
   }
 
   .flex-container {
