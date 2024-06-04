@@ -118,6 +118,12 @@ body {
     flex-wrap: wrap;
     padding: 0 4px;
   }
+  .rows {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
 
   .column {
     flex: 33%;
@@ -130,6 +136,28 @@ body {
     vertical-align: middle;
   }
 
+  .columns_top {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    border: solid 2px #000000;
+
+  }
+
+  .columns {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+
+  .columns img {
+    margin-top: 8px;
+    vertical-align: middle;
+
+  }
   .pp-info {
     max-width: 75%;
     padding: 10px;
