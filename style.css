@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/*Logo for each page*/
 .logo {
   max-width: 200px;
   display: block;
@@ -32,7 +32,6 @@ body {
   margin-right: 2px;
   margin-top: 10px;
 }
-
 .navbar a {
   width: 25%;
   text-decoration: none;
@@ -43,18 +42,17 @@ body {
   padding: 14px 10px;
   text-decoration: none;
 }
-
 .navbar a:hover{
   background-color: #000000;
   font-weight: bold;
   color: #ffffff;
 }
-
 .navbar .active {
   font-size: xx-large;
   background-color: #000f0c;
 }
 
+/*Enter page*/
 .logo-large {
   max-width: 30%;
   margin-left: auto;
@@ -63,7 +61,6 @@ body {
   margin-bottom: 20px;
   display: block;
 }
-
 .enter {
   color: #ffffff;
   max-width: 40%;
@@ -77,18 +74,17 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
-  .enter:hover {
+.enter:hover {
     background-color: #000000;
     font-weight: bold;
   }
 
+  /*Homepage*/
   .flex-container {
     display: flex;
     flex-direction: row;
     margin-left: 5px;
   }
-
   .flex-container > .welcome-img {
     background-color: #000000;
     padding: 20px;
@@ -98,21 +94,41 @@ body {
     flex-wrap: wrap;
 
   }
-
   .welcome-txt {
     text-align: center;
   }
 
+/*About page*/
+
+  .sig-txt {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  .about-txt {
+    text-align: center;
+    padding: 10px;
+  }
    .about-img {
-    background-color: #000000;
-    padding: 20px;
-    font-size: 30px;
-    max-width: 50%;
+    border: solid 6px #000000; 
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+  .about-img-txt {
+    position: relative;
+  }
+  .about-img-txts {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 70px;
+    color: #000000;
+    font-weight: bold;
+  }
 
+  /*Gallery page*/
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -123,8 +139,6 @@ body {
     flex-wrap: wrap;
     padding: 0 4px;
   }
-  
-
   .column {
     flex: 33%;
     max-width: 33%;
@@ -137,13 +151,13 @@ body {
   }
 
   .columns_top {
-    max-width: 75%;
+    max-width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-
-    border: solid 2px #000000;
+    background-color: #000000;
+    border: solid 8px #000000;
 
   }
 
