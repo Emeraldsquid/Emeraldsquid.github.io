@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     const enterButton = document.querySelector('.enter');
     setTimeout(() => {
         enterButton.style.opacity = 1;
-    }, 2000); // Delay the "ENTER" button appearance by 2 seconds
+    }, 2000); // Delay the "ENTER" button, 2 seconds
 });
 
 //homepage images
@@ -12,6 +12,6 @@ window.addEventListener('load', function() {
     images.forEach((img, index) => {
         setTimeout(() => {
             img.classList.add('slide-in');
-        }, index * 500); // Delay each image's animation
+        }, index * 500); // Delay each image animation
     });
 });
