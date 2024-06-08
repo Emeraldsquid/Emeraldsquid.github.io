@@ -9,9 +9,11 @@ window.addEventListener('load', function() {
 //homepage images
 window.addEventListener('load', function() {
     const images = document.querySelectorAll('.welcome-img');
+
     images.forEach((img, index) => {
         setTimeout(() => {
-            img.classList.add('slide-in');
-        }, index * 500); // Delay each image animation
+            img.classList.remove('slide-in-right'); // Remove initial slide-in classes
+            img.classList.add('slide-in'); // Add final slide-in class
+        }, index * 500); // Delay each image's animation
     });
 });
