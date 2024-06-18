@@ -6,6 +6,16 @@ window.addEventListener('load', function() {
     }, 2000); // Delay the "ENTER" button, 2 seconds
 });
 
+//hamburger menu
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+});
+
 //homepage images
 window.addEventListener('load', function() {
     const images = document.querySelectorAll('.welcome-img');
