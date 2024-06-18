@@ -5,11 +5,10 @@
 }
 /*Logo for each page*/
 .logo {
-  max-width: 200px;
+  max-width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
   padding: 15px;
   }
 
