@@ -5,8 +5,8 @@
 }
 /*Logo for each page*/
 .logo {
-  max-width: 100px;
-  margin: 15px 0
+  max-width: 75px;
+  margin: 15px 0;
   }
 body {
   width: 100%;
@@ -18,10 +18,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
+  background-color: #0c1c1e;
 }
 /*index/enter page*/
 body.green {
@@ -76,7 +81,7 @@ body.green {
   justify-content: space-between;
   padding: 10px 20px;
   background: #1c2c2e;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #d1dbd6;
 }
 .nav-links {
   display: flex;
@@ -108,8 +113,9 @@ body.green {
   font-size: 30px;
   background: none;
   border: none;
-  color: #ffffff;
+  color: #d1dbd6;
   cursor: pointer;
+  align-self: center;
 }
 
 
@@ -124,7 +130,7 @@ body.green {
   }
   /*Homepage images and their animation*/
   .welcome-img {
-    width: 30%;
+    width:20%;
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
     border-radius: 10px;
@@ -377,6 +383,9 @@ body.green {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
+      position: relative;
+      background-color: #0c1c1e;
+      border-bottom: solid 2px #d1dbd6;
     }
   
     .nav-links {
@@ -392,6 +401,7 @@ body.green {
   
     .hamburger {
       display: block;
+
     }
     .flex-container {
       align-items: center;
@@ -411,7 +421,7 @@ body.green {
     
     .flex-container {
       align-items: center;
-      flex-direction: column;
+      flex-direction: row;
     }
 
     .flex-container > .welcome-img {
@@ -431,7 +441,7 @@ body.green {
       margin-left: 20px;
       margin-right: 20px;
     }
-  }
+
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
