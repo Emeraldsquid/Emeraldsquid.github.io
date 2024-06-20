@@ -194,10 +194,9 @@ body.green {
    }
   .about-img-txt {
     position: absolute;
-    bottom: 25%;
-    left: 25%;
+    bottom: 10%;
+    left: 10%;
     font-size: 2rem;
-    transform: translate(-50%, 50%) rotate(-45deg);
     color: #4A4A4A;
     font-weight: lighter;
     opacity: 0;
@@ -205,6 +204,7 @@ body.green {
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 0.05em;
     line-height: 1.2;
+    white-space: nowrap;
 
   }
   @keyframes fadeInText {
@@ -336,8 +336,6 @@ body.green {
     background-color: #333;
     color: #fff
   }
-
-  
   .imagetxt {
     position: relative;
   }
@@ -491,6 +489,11 @@ body.green {
     .welcome-img {
       width: 75%;
     margin: 10px 0;
+  }
+  .about-img-txt{
+    bottom:1.5rem;
+    bottom: 5%;
+    left: 5%;
   }
   .contact {
     margin: 10px;
