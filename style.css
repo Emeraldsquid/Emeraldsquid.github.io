@@ -28,6 +28,11 @@ header {
   width: 100%;
   background-color: #0c1c1e;
 }
+main {
+  text-align: center;
+  padding: 20px;
+  background-color: #d1dbd6;
+}
 /*index/enter page*/
 body.green {
     display: flex;
@@ -135,7 +140,22 @@ body.green {
     transition: transform 1s ease, opacity 1s ease;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
+  }
+  .text-block h1 {
+    padding-bottom: 10px;
+  }
+  .text-block {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #1c2c2e;
+    border-radius: 10px;
+    box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .welcome-txt {
+    font-size: 16px;
+    font-style:italic;
+    opacity: 50%;
   }
   .slide-in-right {
     transform: translateX(100%);
@@ -149,30 +169,51 @@ body.green {
 
   .sig-txt {
     text-align: center;
-    font-weight: bold;
-    font-size: large;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand', cursive;
   }
   .about-txt {
     text-align: center;
     padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .about-img-txt-wrap {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
   }
    .about-img {
-    border: solid 6px #000000; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    margin:0 auto;
+    max-width: 800px;
+   }
   .about-img-txt {
-    position: relative;
-  }
-  .about-img-txts {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 70px;
-    color: #000000;
-    font-weight: bold;
+    bottom: 25%;
+    left: 25%;
+    font-size: 2rem;
+    transform: translate(-50%, 50%) rotate(-45deg);
+    color: #4A4A4A;
+    font-weight: lighter;
+    opacity: 0;
+    animation: fadeInText 1s ease-in-out forwards;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+
+  }
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   /*Gallery page*/
@@ -218,17 +259,85 @@ body.green {
     margin-top: 8px;
     vertical-align: middle;
 
+/*pet portrait page*/
   }
-  .pp-info {
-    max-width: 75%;
-    padding: 10px;
-    margin: 5px;
+  .pet-portraits {
+    text-align: center;
+  }
+  .hero-image{
+    background-image: url('hero_image.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  .here-text h1 {
+    font-size: 3rem;
+  }
+  .pet-series {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .pet-series-group {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .pet-series-group h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin: 0;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #000000;
-    background-color: #000000;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.pet-portrait-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+  .pp-info {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
+  .pp-info:hover{
+    background-color: #333;
+    color: #fff
+  }
+
+  
   .imagetxt {
     position: relative;
   }
@@ -264,42 +373,7 @@ body.green {
     color: #d1dbd6;
     font-size: 16px;
     padding: 16px 32px;
-  }
-
-  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cheese_collection.jpg");
-    opacity: 20%;
-    height: 25%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  
-  .hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .hero-text button:hover {
-    background-color: #555;
-    color: white;
-  }
+  }  
 
   .back {
     position: block;
@@ -317,6 +391,8 @@ body.green {
     margin-left: 2px;
     margin-right: 2px;
     margin-top: 10px;
+    background-color: #0c1c1e;
+    border-radius: 10px;
     
   }
 
@@ -334,48 +410,54 @@ body.green {
   }
 
   .contact {
-    color: #0c1c1e;
     text-align: center;
-    border: solid 2px #000f0c;
-    padding-top: 10px;
     background-color: #d1dbd6;
-    margin-left: 2px;
-    margin-right: 2px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #000f0c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
   .contact h1 {
-    font-size: xx-large;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0c1c1e;
   }
-
   .contact p {
-    position: relative;
-    text-align: center;
-    padding: 10px;
+    margin: 20px 0;
+    color: #333;
+    font-size: 1rem;
   }
-
   .contact h2 {
-    text-align: center;
+    font-size: 1.5rem;
     font-weight: lighter;
-    font-size: x-large;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .contact a {
-    
-    text-align: center;
-    text-decoration: none;
-    font-size: x-large;
-    color: #d1dbd6;
-    padding: 14px 10px;
-    text-decoration: none;
-    background-color: #000f0c;
-  }
-
+    color: #333;
+    margin: 10px 0;
+}
+.contact a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000f0c;
+  color: #d1dbd6;
+  font-size: 1.2rem;
+  padding: 12px 24px; /* Adjusted padding */
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
   .contact a:hover {
-    font-weight: bolder;
+    font-weight: bold;
+    opacity: 80%;
   }
+  .connect {
+    text-align: center;
+    margin: 20px;
+  }
+  .connect h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
   
   /*responisvity*/
 
@@ -397,8 +479,7 @@ body.green {
     .navbar a {
       width: 100%;
       font-size: large;
-    }
-  
+    }  
     .hamburger {
       display: block;
 
@@ -410,6 +491,20 @@ body.green {
     .welcome-img {
       width: 75%;
     margin: 10px 0;
+  }
+  .contact {
+    margin: 10px;
+  }
+  .contact h1 {
+    font-size: 1.8rem;
+  }
+  .contact h2 {
+    font-size: 0.9rem;
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .connect p{
+    font-size: 0.9rem;
   }
   }
   
@@ -432,15 +527,6 @@ body.green {
       flex: 50%;
       max-width: 50%;
     }
-    .contact h2 {
-      text-align: center;
-      font-weight: lighter;
-      font-size:small;
-      border: solid 2px #000000;
-      padding: 10px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
 
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -451,24 +537,10 @@ body.green {
     }
 
  }
-main {
-  text-align: center;
-  padding: 20px;
-}
+
 h1 {
     font-weight: bold;
     text-align: 20px 0;
-}
-.text-block {
-  margin: 20px auto;
-  max-width: 800px;
-  padding: 20px;
-  background: #1c2c2e;
-  border-radius: 10px;
-  box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2)
-}
-.welcome-txt {
-  font-size: 16px;
 }
 
 

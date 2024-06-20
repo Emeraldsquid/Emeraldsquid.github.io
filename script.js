@@ -27,3 +27,19 @@ window.addEventListener('load', function() {
         }, index * 500); // Delay each image's animation
     });
 });
+
+//about page text
+window.addEventListener('DOMContentLoaded', function() {
+    const aboutText = document.querySelector('.about-img-txt');
+    const textContent = 'Hello!'; // Text content to display
+
+    // Clear existing content
+    aboutText.textContent = '';
+
+    // Loop through each letter and add with delay
+    for (let i = 0; i < textContent.length; i++) {
+        setTimeout(function() {
+            aboutText.textContent += textContent[i];
+        }, i * 150); // Adjust delay time as needed
+    }
+});
