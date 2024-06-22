@@ -431,6 +431,46 @@ body.green {
 .cheese-image-container:hover .cheese-image2 {
     opacity: 1;
 }
+
+/*digital art page*/
+.hero-image-digital{
+  background-image: url('images/hero.jp');
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.digital-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.digital-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.digital-item:hover {
+  transform: scale(1.05);
+}
+
+.digital-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
  
 
 .back {
