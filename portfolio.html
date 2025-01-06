@@ -1,86 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="SWildgooseDesigns" />
-        <title>SWildgooseDesigns</title>
-        <link rel="icon" type="image/x-icon" href="goosefav.ico">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <img class="logo" src="logo_black.svg" alt="SWildgooseDesigns logo with name"></a>
-            <nav class="navbar">
-                <button class="hamburger" id="hamburger">&#9776;</button>
-                <div class="nav-links" id="nav-links">
-                    <a href="home.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
-                    <a class="active" href="gallery.html">GALLERY</a>
-                    <a href="contact.html">CONTACT</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SWildgooseDesigns - Portfolio of hand-painted artwork by Sharna Wildgoose. Explore wildlife, pets, mythical creatures, and seasonal designs.">
+    <title>SWildgooseDesigns - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="site-logo"><img src="assets/images/logofull.png" alt="swildgoosedesigns"></div>
+            <h1 class="site-title">SWildgooseDesigns</h1>
+            <nav class="main-nav">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#commissions">Commissions</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio.html">Portfolio</a>
+                        <ul class="dropdown">
+                            <li><a href="portfolio.html#wildlife">Wildlife</a></li>
+                            <li><a href="portfolio.html#pets">Pets</a></li>
+                            <li><a href="portfolio.html#mythical-creatures">Mythical Creatures</a></li>
+                            <li><a href="portfolio.html#seasonal">Seasonal</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+
+                </ul>
             </nav>
-        </header>
-            <main>
+        </div>
+    </header>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+
+            <!-- Wildlife Category -->
+            <section id="wildlife" class="portfolio-category">
+                <h3>Wildlife</h3>
                 <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <a href="cheeseboards.html">
-                            <img class="gallery-image" src="images/cheeseboards.jpg" alt="A photograph of a collection of my hand painted cheeseboards" />
-                            <div class="overlay">
-                                <div class="overlay-text">Cheeseboards</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="acrylicpaintings.html">
-                            <img class="gallery-image" src="images/carsington.jpg" alt="Digital monochrome sunflower drawing" />
-                            <div class="overlay">
-                                <div class="overlay-text">Acrylic Paintings</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="petportraits.html">
-                            <img class="gallery-image" src="images/Zac_social_media.jpg" alt="A photograph of a framed oil portrait of a German shepherd named Zac. The painting is held by a child." />
-                            <div class="overlay">
-                                <div class="overlay-text">Pet Portraits</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="digitalart.html">
-                            <img class="gallery-image" src="images/hunt resized with sig.png" alt="Digital monochrome sunflower drawing" />
-                            <div class="overlay">
-                                <div class="overlay-text">Digital Art</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="oilpaintings.html">
-                            <img class="gallery-image" src="images/hyacinth-macaw.jpg" alt="Digital monochrome sunflower drawing" />
-                            <div class="overlay">
-                                <div class="overlay-text">Oil Paintings</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="drawings.html">
-                            <img class="gallery-image" src="images/sunflower.jpg" alt="Digital monochrome sunflower drawing" />
-                            <div class="overlay">
-                                <div class="overlay-text">Drawings</div>
-                            </div>
-                        </a>
-                    </div>
+                    <img src="assets/images/hyacinthmacaw.jpg" alt="Oil painting of a Hyacinth Macaw">
+                    <img src="assets/images/shark.jpg" alt="Acrylic painting of a Great White Shark on wooden slice">
+                    <img src="assets/images/sunflower.jpg" alt="Digital painting of a Sunflower">
+                    <img src="assets/images/cheeseboard1.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
+                    <img src="assets/images/cheeseboard2.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
+                    <img src="assets/images/cheeseboard3.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
+                    <img src="assets/images/cheeseboard4.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
+                    <img src="assets/images/cheeseboard5.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
+                    <img src="assets/images/cheeseboard6.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
                 </div>
-            </main>
-            <footer class="footer">
-                <div class="footer-socials">
-                    <a href="https://www.instagram.com/swildgoosedesigns/"><img src="pngfind.com-instagram-circle-png-903789.png" alt="Instagram logo" style="width: 50%;"></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556487170428"><img src="—Pngtree—facebook white icon_3570425.png" alt="Facebook logo" style="width: 50%;"></a>
-                    <a href="https://www.tiktok.com/@swildgoosedesigns"><img src="tiktok-round-white-icon.png" alt="TikTok logo" style="width: 50%;"></a></div>
+            </section>
+
+            <!-- Pets Category -->
+            <section id="pets" class="portfolio-category">
+                <h3>Pets</h3>
+                <div class="gallery-grid">
+                    <img src="assets/images/tabbycat.png" alt="Digital painting of a Tabby Cat">
+                    <img src="assets/images/africangrey.jpg" alt="Oil painting of an African Grey">
+                    <img src="assets/images/germanshepard.jpg" alt="Oil painting of a German Shepard">
+                    <img src="assets/images/springerspaniel.jpg" alt="Oil painting of a Springer Spaniel">
+                    <img src="assets/images/dogs.jpeg" alt="Pencil drawing of dogs">
                 </div>
-                <p>&copy SWildgooseDesigns 2024</p>
-            </footer>
-            <script src="script.js"></script>
-    </body>
+            </section>
+
+            <!-- Creatures and Characters Category -->
+            <section id="mythical-creatures" class="portfolio-category">
+                <h3>Creatures and Characters</h3>
+                <div class="gallery-grid">
+                    <img src="assets/images/theworm.png" alt="Digital painting of The Worm from Labyrinth">
+                    <img src="assets/images/sparrow_hatter.jpeg" alt="Pencil drawing of a Johnny Depp's Mad hatter and Jack Sparrow">
+                    <img src="assets/images/spider.jpg" alt="Digital painting of a Spider">
+                    <img src="assets/images/audreyII.png" alt="Digital painting of Audrey II">
+                    <img src="assets/images/Jason.jpg" alt="Digital painting of a Jason from Friday the 13th">
+                    <img src="assets/images/jaguar.png" alt="Digital painting of a Black Jaguar">
+                    <img src="assets/images/pennywise.jpeg" alt="Pencil drawing of Pennywise from IT">
+                    <img src="assets/images/toad.jpg" alt="Digital painting of a toad">
+                    
+
+                </div>
+            </section>
+
+            <!-- Seasonal Category -->
+            <section id="seasonal" class="portfolio-category">
+                <h3>Seasonal</h3>
+                <div class="gallery-grid">
+                    <img src="assets/images/christmaswreath.jpg" alt="Acrylic painting of a pig on a birch wood slice">
+                    <img src="assets/images/christmas_slices.jpg" alt="Acrylic character paintings on small wooden slices">
+                    <img src="assets/images/christmas_slices2.jpg" alt="Acrylic original character paintings on small wooden slices">
+                    <img src="assets/images/santasboard.jpg" alt="A treat for Santa boards painted with acrylic">
+                    <img src="assets/images/santaboard2.jpg" alt="A treat for Santa boards painted with acrylic">
+                    <img src="assets/images/santaboard3.jpg" alt="A treat for Santa boards painted with acrylic">
+                    <img src="assets/images/santaboard4.jpg" alt="A treat for Santa boards painted with acrylic">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 SWildgooseDesigns. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
+

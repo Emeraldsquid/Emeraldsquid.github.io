@@ -5,19 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SWildgooseDesigns - Hand-painted artwork and custom designs by Sharna Wildgoose in the Derbyshire Dales. Specializing in wildlife, pets, and mythical creatures.">
     <title>SWildgooseDesigns - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header class="main-header">
         <div class="container">
+            <div class="site-logo"><img src="assets/images/logofull.png" alt="swildgoosedesigns"></div>
             <h1 class="site-title">SWildgooseDesigns</h1>
-            <p class="tagline">Hand-painted artwork inspired by nature and imagination</p>
             <nav class="main-nav">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#commissions">Commissions</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="/index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#commissions">Commissions</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio.html">Portfolio</a>
+                        <ul class="dropdown">
+                            <li><a href="portfolio.html#wildlife">Wildlife</a></li>
+                            <li><a href="portfolio.html#pets">Pets</a></li>
+                            <li><a href="portfolio.html#mythical-creatures">Mythical Creatures</a></li>
+                            <li><a href="portfolio.html#seasonal">Seasonal</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
         </div>
@@ -26,7 +56,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About</h2>
-            <p>Welcome to SWildgooseDesigns! I’m Sharna Wildgoose, an artist based in the Derbyshire Dales. I specialize in painting creatures—both real and mythical—on canvas, boards, and wood. Whether it’s a commissioned pet portrait or a vibrant wildlife scene, each piece is hand-painted with love and attention to detail.</p>
+            <p>Welcome to SWildgooseDesigns! I’m Sharna Wildgoose, an artist based in the Derbyshire Dales. I specialise in painting creatures, both real and mythical. Whether it’s a commissioned pet portrait or a vibrant wildlife scene, each piece is hand-painted with love and attention to detail.</p>
         </div>
     </section>
 
@@ -70,5 +100,7 @@
             <p>&copy; 2025 SWildgooseDesigns. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
