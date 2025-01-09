@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="SWildgooseDesigns" />
-        <title>SWildgooseDesigns - Contact</title>
-        <link rel="icon" type="image/x-icon" href="goosefav.ico">
-        <link rel="stylesheet" href="style.css" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SWildgooseDesigns - Hand-painted artwork and custom designs by Sharna Wildgoose in the Derbyshire Dales. Specializing in wildlife, pets, and mythical creatures.">
+    <title>SWildgooseDesigns - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
     <body>
-        <header>
-            <img class="logo" src="logo_black.svg" alt="SWildgooseDesigns logo with name"></a>
-            <nav class="navbar">
-                <button class="hamburger" id="hamburger">&#9776;</button>
-                <div class="nav-links" id="nav-links">
-                    <a href="home.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="gallery.html">GALLERY</a>
-                    <a class="active" href="contact.html">CONTACT</a>
-                </div>
-            </nav>
+        <header class="main-header">
+            <div class="container">
+                <div class="site-logo"><img src="assets/images/logofull.png" alt="SWildgooseDesigns"></div>
+                <h1 class="site-title">SWildgooseDesigns</h1>
+                <nav class="main-nav">
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul id="menu-list">
+                        <li>
+                            <a href="/index.html">Home</a>
+                            <ul class="dropdown">
+                                <li><a href="/index.html#about">About</a></li>
+                                <li><a href="/index.html#gallery">Gallery</a></li>
+                                <li><a href="/index.html#commissions">Commissions</a></li>
+                                <li><a href="/index.html#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html">Portfolio</a>
+                            <ul class="dropdown">
+                                <li><a href="portfolio.html#wildlife">Wildlife</a></li>
+                                <li><a href="portfolio.html#pets">Pets</a></li>
+                                <li><a href="portfolio.html#mythical-creatures">Mythical Creatures</a></li>
+                                <li><a href="portfolio.html#seasonal">Seasonal</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/shop.html">Shop</a></li>
+                        <li><a href="/contact.html"  class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <section class="contact">
-                <h1>CONTACT ME</h1>
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2>CONTACT ME</h2>
+                    <ul>
+                        <li><a href="mailto:sharna.wildgoose@swildgoosedesigns.co.uk"><img src="assets/images/email.png" alt="Email logo"></a></li>
+                        <li><a href="https://www.etsy.com/shop/SWildgooseDesigns" target="_blank"><img src="assets/images/etsy.png" alt="Etsy logo"></a></li>
+                    </ul>
                 <h2>sharna.wildgoose@swildgoosedesigns.co.uk |  07732137072</h2>
                 <p>Please read all the information regarding pet portait commissions below.</p>
                 <a href="petportraits.html">PET PORTRAITS</a>
+                </div>
             </section>
-            <section class="connect">
-            <h1>CONNECT WITH ME</h1>
-            <div class="socials">
-                <a href="https://www.instagram.com/swildgoosedesigns/"><img src="pngfind.com-instagram-circle-png-903789.png" alt="Instagram logo" style="width: 50%;"></a>
-                <a href="https://www.facebook.com/profile.php?id=61556487170428"><img src="—Pngtree—facebook white icon_3570425.png" alt="Facebook logo" style="width: 50%;"></a>
-                <a href="https://www.tiktok.com/@swildgoosedesigns"><img src="tiktok-round-white-icon.png" alt="TikTok logo" style="width: 50%;"></a>
-            </div>
+            <section id="contact" class="contact">
+            <div class="container">
+                <h2>Connect with me</h2>
+                <ul>
+                    
+                    <li><a href="https://instagram.com/swildgoosedesigns" target="_blank"><img src="assets/images/instagram.png" alt="Instagram logo"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61556487170428" target="_blank"><img src="assets/images/facebook.png" alt="Facebook logo"></a></li>
+                    <li><a href="https://www.tiktok.com/@swildgoosedesigns" target="_blank"><img src="assets/images/tiktok.png" alt="TikTok logo"></a></li>
+                </ul>
+                </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/swildgoosedesigns/"><img src="pngfind.com-instagram-circle-png-903789.png" alt="Instagram logo" style="width: 50%;"></a>
-                <a href="https://www.facebook.com/profile.php?id=61556487170428"><img src="—Pngtree—facebook white icon_3570425.png" alt="Facebook logo" style="width: 50%;"></a>
-                <a href="https://www.tiktok.com/@swildgoosedesigns"><img src="tiktok-round-white-icon.png" alt="TikTok logo" style="width: 50%;"></a></div>
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2025 SWildgooseDesigns. All rights reserved.</p>
             </div>
-            <p>&copy SWildgooseDesigns 2024</p>
         </footer>
-        <script src="script.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

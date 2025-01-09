@@ -1,4 +1,4 @@
-/* Reset and global styles */
+/* Reset and Global Styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -21,7 +21,6 @@ body {
 
 /* Header */
 .main-header {
-
     background: linear-gradient(to bottom, #004d40, #003d33);
     color: #fff;
     display: flex;
@@ -30,10 +29,10 @@ body {
     text-align: center;
 }
 
-/* Logo Styling */
+/* Logo */
 .site-logo img {
-    max-width: 150px; 
-    height: auto; 
+    max-width: 150px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -44,17 +43,20 @@ body {
     margin-bottom: 5px;
 }
 
+/* Navigation */
+.main-nav {
+    position: relative;
+}
 
 .main-nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
     transition: all 0.3s ease-in-out;
 }
 
 .main-nav ul li {
+    position: relative;
     margin: 0 15px;
 }
 
@@ -69,17 +71,73 @@ body {
 }
 
 .main-nav ul li a:hover {
-    background-color: #a8d5c2;
+    background-color: #f1f1f1;
     color: #003d33;
 }
 
-/* Hamburger Menu Styles */
+/* Dropdown Menu */
+.main-nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    width: 200px;
+}
+
+.main-nav ul .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.main-nav ul .dropdown li a:hover {
+    background-color: #f3f3f3;
+}
+
+.main-nav ul li a.active {
+    background-color: #f1f1f1;
+    color: #003d33;
+    font-weight: bold;
+    position: relative;
+}
+
+.main-nav ul li a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #003d33;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.main-nav ul li a.active:hover::after {
+    width: 100%;
+}
+
+/* Dropdown on Hover (Desktop) */
+@media (min-width: 769px) {
+    .main-nav ul li:hover > .dropdown {
+        display: block;
+    }
+}
+
+/* Hamburger Menu */
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .menu-toggle .bar {
@@ -90,12 +148,12 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Responsive Navigation */
+/* Mobile Navigation */
 @media (max-width: 768px) {
     .main-nav ul {
-        display: none; /* Hide the links initially */
+        display: none;
         flex-direction: column;
-        background-color: #003d33;
+        background-color: rgba(0, 61, 51, 0.95);
         position: fixed;
         top: 0;
         right: 0;
@@ -104,24 +162,50 @@ body {
         text-align: center;
         z-index: 10;
         padding-top: 50px;
+        backdrop-filter: blur(5px);
     }
 
     .main-nav ul li {
         margin: 20px 0;
     }
 
+    .main-nav ul li .dropdown {
+        position: static;
+        display: none;
+        width: 100%;
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
     .menu-toggle {
         display: flex;
     }
 
-    .main-nav ul.active {
-        display: flex; /* Show the links when toggled */
+    .main-nav ul li a {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .main-nav ul li .dropdown.active {
+        display: flex;
+        flex-direction: column;
+    }
+        .main-nav ul li a {
+        cursor: pointer;
+    }
+
+    .main-nav ul li a:active {
+        background-color: #a8d5c2;
+    }
+
+    .main-nav ul.active li a {
+        cursor: pointer;
     }
 }
 
-
-
-/* Section styles */
+/* Section Styles */
 section {
     padding: 50px 0;
     background-color: #fff;
@@ -169,10 +253,9 @@ p {
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
 }
 
-/* Commissions Section */
+/* Commissions */
 .commissions {
     text-align: center;
 }
@@ -188,6 +271,47 @@ p {
     color: #aeea00;
 }
 
+/* Carousel */
+.carousel {
+    max-width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slick-prev, .slick-next {
+    background-color: #003d33;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #a8d5c2;
+    color: #003d33;
+}
+
+.slick-dots li button:before {
+    color: #003d33;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000;
+}
+
 /* Contact Section */
 .contact ul {
     list-style: none;
@@ -197,12 +321,7 @@ p {
     padding: 0;
 }
 
-.contact ul li {
-    margin: 0;
-}
-
 .contact ul li a {
-    display: inline-block;
     width: 50px;
     height: 50px;
     background-color: #003d33;
@@ -220,8 +339,8 @@ p {
 
 .contact ul li a:hover {
     background-color: #a8d5c2;
-    transform: scale(1.1); /* Subtle grow effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
@@ -236,4 +355,3 @@ p {
 .main-footer p {
     margin: 0;
 }
-

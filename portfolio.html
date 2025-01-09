@@ -6,96 +6,104 @@
     <meta name="description" content="SWildgooseDesigns - Portfolio of hand-painted artwork by Sharna Wildgoose. Explore wildlife, pets, mythical creatures, and seasonal designs.">
     <title>SWildgooseDesigns - Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.8.1/slick/slick-theme.css">
+
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="site-logo"><img src="assets/images/logofull.png" alt="swildgoosedesigns"></div>
-            <h1 class="site-title">SWildgooseDesigns</h1>
-            <nav class="main-nav">
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul>
-                    <li>
-                        <a href="/index.html">Home</a>
-                        <ul class="dropdown">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#commissions">Commissions</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio.html">Portfolio</a>
-                        <ul class="dropdown">
-                            <li><a href="portfolio.html#wildlife">Wildlife</a></li>
-                            <li><a href="portfolio.html#pets">Pets</a></li>
-                            <li><a href="portfolio.html#mythical-creatures">Mythical Creatures</a></li>
-                            <li><a href="portfolio.html#seasonal">Seasonal</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/shop.html">Shop</a>
-                    </li>
-                    <li>
-                        <a href="/contact.html">Contact</a>
-                    </li>
-
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="portfolio" class="portfolio">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SWildgooseDesigns - Portfolio of hand-painted artwork by Sharna Wildgoose. Explore wildlife, pets, mythical creatures, and seasonal designs.">
+        <title>SWildgooseDesigns - Portfolio</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.8.1/slick/slick-theme.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <div class="site-logo"><img src="assets/images/logofull.png" alt="swildgoosedesigns"></div>
+                <h1 class="site-title">SWildgooseDesigns</h1>
+                <nav class="main-nav">
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul id="menu-list">
+                        <li>
+                            <a href="/index.html">Home</a>
+                            <ul class="dropdown">
+                                <li><a href="/index.html#about">About</a></li>
+                                <li><a href="/index.html#gallery">Gallery</a></li>
+                                <li><a href="/index.html#commissions">Commissions</a></li>
+                                <li><a href="/index.html#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html" class="active">Portfolio</a>
+                            <ul class="dropdown">
+                                <li><a href="portfolio.html#wildlife">Wildlife</a></li>
+                                <li><a href="portfolio.html#pets">Pets</a></li>
+                                <li><a href="portfolio.html#mythical-creatures">Mythical Creatures</a></li>
+                                <li><a href="portfolio.html#seasonal">Seasonal</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/shop.html">Shop</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <section id="portfolio" class="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
 
             <!-- Wildlife Category -->
             <section id="wildlife" class="portfolio-category">
                 <h3>Wildlife</h3>
-                <div class="gallery-grid">
-                    <img src="assets/images/hyacinthmacaw.jpg" alt="Oil painting of a Hyacinth Macaw">
-                    <img src="assets/images/shark.jpg" alt="Acrylic painting of a Great White Shark on wooden slice">
-                    <img src="assets/images/sunflower.jpg" alt="Digital painting of a Sunflower">
-                    <img src="assets/images/cheeseboard1.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
-                    <img src="assets/images/cheeseboard2.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
-                    <img src="assets/images/cheeseboard3.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
-                    <img src="assets/images/cheeseboard4.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
-                    <img src="assets/images/cheeseboard5.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
-                    <img src="assets/images/cheeseboard6.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice">
+                <div class="carousel">
+                    <div><img src="assets/images/hyacinthmacaw.jpg" alt="Oil painting of a Hyacinth Macaw"></div>
+                    <div><img src="assets/images/shark.jpg" alt="Acrylic painting of a Great White Shark on wooden slice"></div>
+                    <div><img src="assets/images/sunflower.jpg" alt="Digital painting of a Sunflower"></div>
+                    <div><img src="assets/images/cheeseboard1.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice"></div>
+                    <div><img src="assets/images/cheeseboard2.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice"></div>
+                    <div><img src="assets/images/cheeseboard3.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice"></div>
+                    <div><img src="assets/images/cheeseboard4.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice"></div>
+                    <div><img src="assets/images/cheeseboard5.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice"></div>
+                    <div><img src="assets/images/cheeseboard6.jpg" alt="A one person cheeeseboard with an Acrylic painting of foraging mice"></div>
                 </div>
             </section>
 
             <!-- Pets Category -->
             <section id="pets" class="portfolio-category">
                 <h3>Pets</h3>
-                <div class="gallery-grid">
-                    <img src="assets/images/tabbycat.png" alt="Digital painting of a Tabby Cat">
-                    <img src="assets/images/africangrey.jpg" alt="Oil painting of an African Grey">
-                    <img src="assets/images/germanshepard.jpg" alt="Oil painting of a German Shepard">
-                    <img src="assets/images/springerspaniel.jpg" alt="Oil painting of a Springer Spaniel">
-                    <img src="assets/images/dogs.jpeg" alt="Pencil drawing of dogs">
+                <div class="carousel">
+                    <div><img src="assets/images/tabbycat.png" alt="Digital painting of a Tabby Cat"></div>
+                    <div><img src="assets/images/africangrey.jpg" alt="Oil painting of an African Grey"></div>
+                    <div><img src="assets/images/germanshepard.jpg" alt="Oil painting of a German Shepard"></div>
+                    <div><img src="assets/images/springerspaniel.jpg" alt="Oil painting of a Springer Spaniel"></div>
+                    <div><img src="assets/images/dogs.jpeg" alt="Pencil drawing of dogs"></div>
                 </div>
             </section>
 
             <!-- Creatures and Characters Category -->
             <section id="mythical-creatures" class="portfolio-category">
                 <h3>Creatures and Characters</h3>
-                <div class="gallery-grid">
-                    <img src="assets/images/theworm.png" alt="Digital painting of The Worm from Labyrinth">
-                    <img src="assets/images/sparrow_hatter.jpeg" alt="Pencil drawing of a Johnny Depp's Mad hatter and Jack Sparrow">
-                    <img src="assets/images/spider.jpg" alt="Digital painting of a Spider">
-                    <img src="assets/images/audreyII.png" alt="Digital painting of Audrey II">
-                    <img src="assets/images/Jason.jpg" alt="Digital painting of a Jason from Friday the 13th">
-                    <img src="assets/images/jaguar.png" alt="Digital painting of a Black Jaguar">
-                    <img src="assets/images/pennywise.jpeg" alt="Pencil drawing of Pennywise from IT">
-                    <img src="assets/images/toad.jpg" alt="Digital painting of a toad">
+                <div class="carousel">
+                    <div><img src="assets/images/theworm.png" alt="Digital painting of The Worm from Labyrinth"></div>
+                    <div><img src="assets/images/sparrow_hatter.jpeg" alt="Pencil drawing of a Johnny Depp's Mad hatter and Jack Sparrow"></div>
+                    <div><img src="assets/images/spider.jpg" alt="Digital painting of a Spider"></div>
+                    <div><img src="assets/images/audreyII.png" alt="Digital painting of Audrey II"></div>
+                    <div><img src="assets/images/jason.png" alt="Digital painting of a Jason from Friday the 13th"></div>
+                    <div><img src="assets/images/jaguar.png" alt="Digital painting of a Black Jaguar"></div>
+                    <div><img src="assets/images/pennywise.jpeg" alt="Pencil drawing of Pennywise from IT"></div>
+                    <div><img src="assets/images/toad.jpg" alt="Digital painting of a toad"></div>
                     
 
                 </div>
@@ -104,14 +112,14 @@
             <!-- Seasonal Category -->
             <section id="seasonal" class="portfolio-category">
                 <h3>Seasonal</h3>
-                <div class="gallery-grid">
-                    <img src="assets/images/christmaswreath.jpg" alt="Acrylic painting of a pig on a birch wood slice">
-                    <img src="assets/images/christmas_slices.jpg" alt="Acrylic character paintings on small wooden slices">
-                    <img src="assets/images/christmas_slices2.jpg" alt="Acrylic original character paintings on small wooden slices">
-                    <img src="assets/images/santasboard.jpg" alt="A treat for Santa boards painted with acrylic">
-                    <img src="assets/images/santaboard2.jpg" alt="A treat for Santa boards painted with acrylic">
-                    <img src="assets/images/santaboard3.jpg" alt="A treat for Santa boards painted with acrylic">
-                    <img src="assets/images/santaboard4.jpg" alt="A treat for Santa boards painted with acrylic">
+                <div class="carousel">
+                    <div><img src="assets/images/christmaswreath.jpg" alt="Acrylic painting of a pig on a birch wood slice"></div>
+                    <div><img src="assets/images/christmas_slices.jpg" alt="Acrylic character paintings on small wooden slices"></div>
+                    <div><img src="assets/images/christmas_slices2.jpg" alt="Acrylic original character paintings on small wooden slices"></div>
+                    <div><img src="assets/images/santasboard.jpg" alt="A treat for Santa boards painted with acrylic"></div>
+                    <div><img src="assets/images/santaboard2.jpg" alt="A treat for Santa boards painted with acrylic"></div>
+                    <div><img src="assets/images/santaboard3.jpg" alt="A treat for Santa boards painted with acrylic"></div>
+                    <div><img src="assets/images/santaboard4.jpg" alt="A treat for Santa boards painted with acrylic"></div>
                 </div>
             </section>
         </div>
@@ -123,7 +131,40 @@
         </div>
     </footer>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="https://unpkg.com/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Carousel Initialization -->
+    <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
     <script src="assets/js/script.js"></script>
+    
 </body>
 </html>
 
