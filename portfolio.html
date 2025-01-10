@@ -34,24 +34,8 @@
                         <span class="bar"></span>
                     </div>
                     <ul id="menu-list">
-                        <li>
-                            <a href="/index.html">Home</a>
-                            <ul class="dropdown">
-                                <li><a href="/index.html#about">About</a></li>
-                                <li><a href="/index.html#gallery">Gallery</a></li>
-                                <li><a href="/index.html#commissions">Commissions</a></li>
-                                <li><a href="/index.html#contact">Contact</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/portfolio.html" class="active">Portfolio</a>
-                            <ul class="dropdown">
-                                <li><a href="portfolio.html#wildlife">Wildlife</a></li>
-                                <li><a href="portfolio.html#pets">Pets</a></li>
-                                <li><a href="portfolio.html#mythical-creatures">Mythical Creatures</a></li>
-                                <li><a href="portfolio.html#seasonal">Seasonal</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/portfolio.html" class="active">Portfolio</a></li>
                         <li><a href="/shop.html">Shop</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
@@ -137,31 +121,29 @@
     <script src="https://unpkg.com/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Carousel Initialization -->
     <script>
-        $(document).ready(function() {
-            $('.carousel').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });
+$(document).ready(function () {
+    $('.carousel').slick({
+        centerMode: true, // Enables focus on the center slide
+        centerPadding: '40px', // Adds padding on sides
+        slidesToShow: 3, // Show 3 slides at a time (center + two sides)
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1, // Show one slide on smaller screens
+                    centerMode: false, // Disable center mode on smaller screens
+                    dots: true, // Add dots for navigation
+                    arrows: false, // Hide arrows
+                }
+            }
+        ],
+        infinite: true, // Enable infinite looping
+        arrows: true, // Enable arrows for navigation
+        dots: true, // Show navigation dots
+        autoplay: false, // Disable autoplay
+    });
+});
+
     </script>
     <script src="assets/js/script.js"></script>
     

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.remove("active");
         });
     });
-    
+
     // Toggle mobile menu
     menuToggle.addEventListener('click', () => {
         menuList.classList.toggle('active');
@@ -42,4 +42,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Overlay functionality
+    const openOverlayBtn = document.getElementById("open-overlay");
+    const closeOverlayBtn = document.getElementById("close-overlay");
+    const overlay = document.getElementById("overlay");
+
+    if (openOverlayBtn && closeOverlayBtn && overlay) {
+        openOverlayBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            overlay.style.display = "flex";
+        });
+
+        closeOverlayBtn.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+
+        // Optional: Close overlay when clicking outside of it
+        overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+                overlay.style.display = "none";
+            }
+        });
+
+        document.getElementById('open-overlay').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'flex';
+        });
+        
+        document.getElementById('close-overlay').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+        });
+        
+        document.getElementById('return-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('overlay').scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+    }
 });
+
