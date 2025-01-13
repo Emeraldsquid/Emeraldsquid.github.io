@@ -145,25 +145,23 @@
     <!-- Carousel Initialization -->
     <script>
 $(document).ready(function () {
-    $('.carousel').slick({
-        centerMode: true, // Enables focus on the center slide
-        centerPadding: '40px', // Adds padding on sides
-        slidesToShow: 3, // Show 3 slides at a time (center + two sides)
+    $('.carousel').slick({ 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        dots: true,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 1, // Show one slide on smaller screens
-                    centerMode: false, // Disable center mode on smaller screens
                     dots: true, // Add dots for navigation
                     arrows: false, // Hide arrows
                 }
             }
         ],
-        infinite: true, // Enable infinite looping
-        arrows: true, // Enable arrows for navigation
-        dots: true, // Show navigation dots
-        autoplay: false, // Disable autoplay
     });
 });
 

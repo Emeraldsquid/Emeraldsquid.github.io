@@ -250,7 +250,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #f1f1f1;
+    background-color: #d4e2e0;
 }
 
 h2 {
@@ -305,95 +305,152 @@ p {
 }
 
 .commissions a:hover {
-    color: #aeea00;
+    color: #fff;
 }
 
-.portfolio-category {
-    margin-bottom: 50px; /* Add spacing between categories */
-}
-
+/* Portfolio Category Section Titles */
 .portfolio-category h3 {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #09473d;
+    font-size: 2rem; /* Larger text size for prominence */
+    color: #09473d; /* Dark green color */
+    text-transform: uppercase; /* Capitalize all letters */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-align: center; /* Center-align the title */
+    margin-bottom: 1rem; /* Space below the title */
+    position: relative; /* For decorative underline */
 }
 
-.portfolio-category {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
+/* Decorative Underline */
+.portfolio-category h3::after {
+    content: ''; /* Decorative line */
+    display: block;
+    width: 50%; /* Adjust width for balance */
+    height: 3px; /* Thickness of the line */
+    background: #002b24; /* Light green color */
+    margin: 0.5rem auto 0; /* Space above line and center it */
+    border-radius: 2px; /* Rounded edges */
 }
 
 
 /* Carousel */
 .carousel {
-    max-width: 75%;
-    margin: 2rem auto;
+    max-width: 75%; /* Restricts the carousel width */
+    margin: 2rem auto; /* Centers the carousel */
     position: relative;
+    overflow: visible !important; /* Ensures only one image is visible */
+    text-align: center; /* Centers content inside */
 }
 
 .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* Make the image scale with the carousel width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Prevent the image from becoming too large */
+    object-fit: contain; /* Ensures the image stays within bounds */
     display: block;
     border-radius: 8px;
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .carousel img:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /* Slight zoom effect */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Hide Default Slick Arrows Completely */
+.slick-prev::before,
+.slick-next::before {
+    content: ''; /* Remove default arrow icons */
+    display: none; /* Ensure they're not displayed */
+}
+
+/* Custom Modern Carousel Arrows */
 .slick-prev, .slick-next {
-    background-color: #003d33;
-    border-radius: 50%;
-    color: #fff;
-    width: 40px;
-    height: 40px;
+    background: solid rgb(1, 44, 24); /* Gradient for style */
+    border-radius: 50%; /* Circular buttons */
+    color: solid rgb(1, 44, 24); /* Arrow color */
+    width: 60px; /* Size of the button */
+    height: 60px;
     display: flex !important;
     justify-content: center;
     align-items: center;
-    z-index: 10;
-    transition: background-color 0.3 ease, color 0.3s ease;
+    z-index: 1000;
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth hover effect */
+    position: absolute; /* Positioned relative to carousel */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
+/* Custom Arrow Icons */
+.slick-prev::after, .slick-next::after {
+    content: ''; /* Custom arrow design */
+    display: inline-block;
+    border: solid rgb(1, 44, 24);
+    border-width: 0 4px 4px 0;
+    padding: 8px;
+    transform: rotate(45deg); /* Default arrow shape */
+}
+
+.slick-prev::after {
+    transform: rotate(135deg); /* Points left */
+}
+
+.slick-next::after {
+    transform: rotate(-45deg); /* Points right */
+}
+
+/* Adjust Arrow Positions */
 .slick-prev {
-    left: -50px;
+    left: -40px; /* Space to the left */
 }
 
 .slick-next {
-    right: -50px;
+    right: -40px; /* Space to the right */
 }
 
-.slick-dots{
+/* Hover Effects for Arrows */
+.slick-prev:hover, .slick-next:hover {
+    transform: scale(1.2) translateY(-50%); /* Slight enlargement */
+}
+
+/* Optional: Adjust Dots Style (if desired) */
+.slick-dots li button:before {
+    color: #003d33; /* Dark green dots */
+    font-size: 12px;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #004d40; /* Slightly lighter green for active dot */
+}
+
+
+
+/* Carousel Dots */
+.slick-dots {
     bottom: -20px;
     display: flex !important;
     justify-content: center;
     align-items: center;
 }
 
-.slick-prev:hover, .slick-next:hover {
-    background-color: #a8d5c2;
-    color: #003d33;
-}
-
 .slick-dots li button:before {
-    color: #003d33;
+    color: #003d33; /* Dark green dots */
     font-size: 12px;
     opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #000;
+    color: #004d40; /* Slightly lighter green for active */
 }
 
+/* Center and Highlight Current Image */
 .slick-center img {
-    opacity: 1 !important; /* Ensure full opacity */
-    transform: scale(1.1); /* Optional for emphasis */
+    opacity: 1 !important; 
+    transform: scale(1.1); /* Slight enlargement for focus */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 
 /* Contact Section */
 .contact ul {
