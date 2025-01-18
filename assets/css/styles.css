@@ -514,10 +514,9 @@ p {
 
 /* Custom Modern Carousel Arrows */
 .slick-prev, .slick-next {
-    background: solid rgb(1, 44, 24); /* Gradient for style */
     border-radius: 50%; /* Circular buttons */
-    color: solid rgb(1, 44, 24); /* Arrow color */
-    width: 60px; /* Size of the button */
+    color: rgb(1, 44, 24); /* Arrow */
+    width: 60px; /* Button */
     height: 60px;
     display: flex !important;
     justify-content: center;
@@ -813,7 +812,24 @@ table th {
     cursor: pointer;
 }
 
+.coming-soon {
+    border: 3px solid #003d33;
+    border-radius: 75px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 20px auto;
+  }
 
+  .coming-soon li {
+    font-size: 1.5rem;
+    margin: 10px 10px;
+    color: #002b24;
+    padding: 0px;
+    list-style: none;
+    
+  }
+  
 /* General Footer Styling */
 footer {
     background-color: #002b24; /* Dark background */
