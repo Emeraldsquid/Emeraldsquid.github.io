@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Moth Dividers</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .section {
+            padding: 100px 20px;
+            position: relative;
+        }
+        .mushroom-divider {
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in {
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="section" style="background-color: #2a2a2a;">Section 1</div>
+    <img src="assets/images/moon_moon_background.png" class="moth-divider" style="top: 50vh;" id="moth1">
+    <div class="section" style="background-color: #3a3a3a;">Section 2</div>
+    <img src="assets/images/moon_moon_background.png" class="moth-divider" style="top: 150vh;" id="moth2">
+    <div class="section" style="background-color: #2a2a2a;">Section 3</div>
+    <script>
+        document.addEventListener("scroll", function () {
+            let mushrooms = document.querySelectorAll(".moth-divider");
+            mushrooms.forEach(moth => {
+                let rect =moth.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    mushroom.classList.add("fade-in");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
