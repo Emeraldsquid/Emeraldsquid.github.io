@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll(".main-nav ul li a");
     const navMenu = document.querySelector(".main-nav ul");
 
-    // Close menu when any link is clicked
+    // Close menu when any link is clicked, possible removal
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             navMenu.classList.remove("active");
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Overlay functionality
+    // Overlay functionality - opacity changes
     const openOverlayBtn = document.getElementById("open-overlay");
     const closeOverlayBtn = document.getElementById("close-overlay");
     const overlay = document.getElementById("overlay");
