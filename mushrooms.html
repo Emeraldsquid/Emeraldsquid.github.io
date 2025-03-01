@@ -38,11 +38,11 @@
     <div class="section" style="background-color: #2a2a2a;">Section 3</div>
     <script>
         document.addEventListener("scroll", function () {
-            let mushrooms = document.querySelectorAll(".moth-divider");
-            mushrooms.forEach(moth => {
+            let moth = document.querySelectorAll(".moth-divider");
+            moth.forEach(moth => {
                 let rect =moth.getBoundingClientRect();
                 if (rect.top < window.innerHeight - 50) {
-                    mushroom.classList.add("fade-in");
+                    moth.classList.add("fade-in");
                 }
             });
         });
